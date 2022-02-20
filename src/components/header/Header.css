@@ -1,0 +1,21 @@
+.header{
+    width: 100%;
+    height: 350px;
+    border: 1px solid black;
+}
+
+.headerImg{
+    width: 100%;
+    height: 350px;
+}
+
+blockquote{
+    position: absolute;
+    color: white;
+    width: 50%;
+    top: 22%;
+    font-size: 34px;
+    justify-content: center;
+    left:25%;
+}
+

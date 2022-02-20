@@ -1,0 +1,128 @@
+.navbar {
+    color: #727272;
+    width: 100%;
+    position: sticky;
+    top: 0;    
+    display: flex;
+    align-items: center;
+    height: 80px;
+    background: #f9f9f9;
+    z-index: 999;
+  }
+
+  .top-left{
+    flex: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .logo {
+    font-size: 76px;
+    color: #ccc;
+    text-transform: uppercase;
+    font-family: 'Open sans';
+    font-weight: 600;
+    position: absolute;
+    top: -15px;
+    left: 10px;
+    flex: 3;
+  }
+
+  .top-center{
+    flex: 6;
+
+  }
+
+  .top-list{
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  .top-list-items{
+    margin: 15px;
+    text-decoration: none;
+    color: #8f8f8f;
+    font-size: 24px;
+    font-weight: 400;
+    transition: all 0.5s ease-in-out;
+    text-transform: uppercase;
+    cursor: pointer;
+    border: none;
+  }
+
+  .effect01 {
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  .effect01:hover {
+    border-bottom: 2px solid #666;
+    background-color: #FFF;
+    box-shadow:0px 0px 0px 4px #EEE inset;
+  }
+  
+  /*btn_text*/
+  .effect01 span {
+    transition: all 0.2s ease-out;
+    z-index: 2;
+  }
+  .effect01:hover span{
+    letter-spacing: 0.13em;
+    color: #333;
+  }
+
+  
+
+.link{
+  text-decoration: none;
+  color: inherit;
+}
+
+  .top-right{
+    flex: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .bgtext{
+    background: linear-gradient(
+        to right, 
+        rgb(145, 61, 255), 
+        rgb(238, 46, 255)
+      );
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-align: center;
+  }
+
+  .topUsername{
+    font-size: 23px;
+    line-height: 1.1;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+    text-transform: capitalize;
+  }
+
+  .topSearchIcon{
+    font-size: 18px;
+    color: #666;
+    cursor: pointer;
+    margin-left: 15px;
+  }
+
+  
+
+  
+
+  
+
+ 
+
