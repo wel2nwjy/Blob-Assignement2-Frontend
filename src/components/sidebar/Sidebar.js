@@ -13,11 +13,12 @@ const [cats, setCats] = useState([]);
 useEffect(()=>{
   const fetchCategories= async () => {
     const response = await axios.get("/categories");
-    setCats(response.data);
+    setCats((response.data));   
   };
-  fetchCategories();
+  fetchCategories();  
 },[])
 
+console.log("cats",cats)
   return (
     <div className="sidebar">
       <div className="sidebarItem">
@@ -37,9 +38,9 @@ useEffect(()=>{
       <div className="sidebarItem">
         <span className="sidebarTitle">CATEGORIES</span>
         <ul className="sidebarList">
-        {cats.map((c,key) => (
-            <Link key={key} to={`/?cat=${c.name}`} className="link">
-            <li className="sidebarListItem">{c.name}</li>
+        {cats.map((c,i) => (
+            <Link key={i} to={`/?cat=${c.name}`} className="link">
+               <li key={c._id}  className="sidebarListItem">{c.name}</li>
             </Link>
           ))} 
         </ul>
